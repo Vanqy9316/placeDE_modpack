@@ -4,6 +4,6 @@
 	"width": 200,
 	"height": 20,
 	"langKey": "menu.singleplayer",
-	"action": "OPEN_URL",
-	"data": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+	"action": "OPEN_GUI",
+	"data": "SINGLEPLAYER"
 }
