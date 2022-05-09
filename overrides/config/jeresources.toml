@@ -1,0 +1,11 @@
+enchantsBlacklist = ["flimflam", "soulBound", "reactive"]
+disableLootManagerReloading = true
+#Range: 1 ~ 4
+itemsPerColumn = 4
+#Range: 1 ~ 4
+itemsPerRow = 4
+diyData = true
+showDevData = false
+hiddenTabs = []
+dimensionsBlacklist = [-11]
+
