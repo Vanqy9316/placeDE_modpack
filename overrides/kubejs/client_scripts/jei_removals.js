@@ -84,7 +84,8 @@ onEvent('jei.hide.items', e => {
     'createaddition:diamond_grit',
     'projectred-core:copper_ingot',
     'pipez:universal_pipe',
-    /chipped:*/
+    /chipped:*/,
+    'envirocore:creative_energy_source' //has missing texture and no recipe
   ])
 
   enviroStonesMats.forEach(stone => e.hide(`/enviromats:${stone}_.*/`))
