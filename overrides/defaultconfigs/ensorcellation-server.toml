@@ -1,0 +1,6 @@
+
+[Enchantments]
+	[Enchantments.Pilfering]
+				Enable = false
+				Treasure = false
+				"Allow Player Stealing" = false

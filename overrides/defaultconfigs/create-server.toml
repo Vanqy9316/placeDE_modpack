@@ -1,0 +1,13 @@
+[recipes]
+	bulkPressing = true
+	bulkCutting = true
+[fluids]
+	fluidTankCapacity = 64
+	hosePulleyBlockThreshold = -1
+[kinetics]
+	maxBeltLength = 32
+	crushingDamage = 40
+	maxMotorSpeed = 1024
+	maxRotationSpeed = 1024
+[schematics.schematicannon]
+	schematicannonDelay = 2

@@ -1,0 +1,3 @@
+[general]
+		giveJournalOnJoin = false
+		modidOreBlacklist = ["allthemodium"]

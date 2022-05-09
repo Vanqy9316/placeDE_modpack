@@ -1,0 +1,9 @@
+
+["Global Options"]
+	"Blocks Retain Tank Contents" = true
+["World Generation"]
+	Copper = false
+	Tin = false
+	Lead = false
+	Silver = false
+	Nickel = false
