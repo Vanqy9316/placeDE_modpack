@@ -1,6 +1,7 @@
 onEvent('jei.hide.items', e => {
   //#region consts
   let colors = ['white', 'light_gray', 'gray', 'black', 'red', 'orange', 'yellow', 'lime', 'green', 'light_blue', 'cyan', 'blue', 'purple', 'magenta', 'pink', 'brown']
+  //mekanism is weird, uses a different id notation ingame than other mods
   let typeFirst = ['mekanism']
   let enviroStonesMats = ['basalt', 'hardened_stone', 'granodiorite', 'marble', 'pumice', 'travertine']
   //#endregion
@@ -34,7 +35,6 @@ onEvent('jei.hide.items', e => {
     /supplementaries:bamboo_spikes_tipped/,
     'quark:ancient_tome',
     '@curios',
-    'appliedenergistics2:silicon',
     'appliedenergistics2:flour',
     'appliedenergistics2:network_tool',
     /titanium:.+/,
