@@ -1,0 +1,17 @@
+{
+  "beepediaItemID": "allthecompressed:atm_star_block_4x",
+  "specialAbilities": [
+    "spider"
+  ],
+  "potionImmunities": [
+    "minecraft:poison",
+    "minecraft:slowness",
+    "minecraft:instant_damage",
+    "minecraft:nausea",
+    "minecraft:hunger",
+    "minecraft:weakness",
+    "minecraft:wither",
+    "apotheosis:sundering",
+    "cyclic:paralyze"
+  ]
+}
