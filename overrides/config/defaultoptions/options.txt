@@ -1,0 +1,8 @@
+autoJump:false
+mipmapLevels:0
+soundCategory_master:0.3
+soundCategory_music:0.3
+gamma:0.5
+difficulty:2
+renderClouds:false
+resourcePacks:["vanilla","mod_resources","resourcefulbees","quark:emote_resources","packmenu","file/pipez-textures.zip","Black Icons"]
