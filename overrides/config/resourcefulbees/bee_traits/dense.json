@@ -12,7 +12,6 @@
     "minecraft:hunger",
     "minecraft:weakness",
     "minecraft:wither",
-    "apotheosis:sundering",
-    "cyclic:paralyze"
+    "apotheosis:sundering"
   ]
 }
