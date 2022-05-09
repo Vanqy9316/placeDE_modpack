@@ -1,0 +1,9 @@
+{
+	"x": -100,
+	"y": 24,
+	"width": 200,
+	"height": 20,
+	"langKey": "placede.connect",
+	"action": "CONNECT_TO_SERVER",
+	"data": "94.130.39.121:25565"
+}
