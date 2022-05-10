@@ -154,7 +154,7 @@ onEvent('recipes', e => {
     A: 'appliedenergistics2:annihilation_core',
     F: 'appliedenergistics2:formation_core',
     I: '#forge:ingots/iron',
-    C: '#forge:workbench'
+    C: '#forge:workbenches'
   })
   modifyShaped(e, 'appliedenergistics2:cell_workbench', 1, ['WEW', 'ICI', 'III'], {
     W: '#minecraft:wool',
@@ -165,7 +165,7 @@ onEvent('recipes', e => {
 
   modifyShapeless(e, 'appliedenergistics2:cable_anchor', 3, ['#forge:ingots/iron', '#appliedenergistics2:knife'])
   modifyShapeless(e, 'appliedenergistics2:fluix_covered_cable', 1, ['#minecraft:wool', 'appliedenergistics2:fluix_glass_cable'])
-  modifyShapeless(e, 'appliedenergistics2:crafting_card', 1, ['#forge:workbench', 'appliedenergistics2:basic_card'])
+  modifyShapeless(e, 'appliedenergistics2:crafting_card', 1, ['#forge:workbenches', 'appliedenergistics2:basic_card'])
   modifyShapeless(e, 'appliedenergistics2:fuzzy_card', 1, ['#minecraft:wool', 'appliedenergistics2:advanced_card'])
-  modifyShapeless(e, 'appliedenergistics2:crafting_terminal', 1, ['appliedenergistics2:terminal', '#forge:workbench', 'appliedenergistics2:calculation_processor'])
+  modifyShapeless(e, 'appliedenergistics2:crafting_terminal', 1, ['appliedenergistics2:terminal', '#forge:workbenches', 'appliedenergistics2:calculation_processor'])
 })
