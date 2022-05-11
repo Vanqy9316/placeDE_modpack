@@ -103,7 +103,7 @@ onEvent('item.tags', e => {
   e.add('forge:hoes', ['/.+_hoe/', '/.+:hoe_.+/'])
   e.add('forge:simple_honeycombs', '/^.+:(?!(catnip|rgbee)_).*honeycomb$/')
   e.add('forge:simple_honeycomb_blocks', '/^.+:(?!(catnip|rgbee)_).*honeycomb_block$/')
-  e.add('misctags:water/items', ['#forge:water', 'minecraft:water_bucket', 'create:honey_bucket', 'create:chocolate_bucket', 'resourcefulbees:water_honeycomb'])
+  e.add('misctags:water/items', ['#forge:water', 'minecraft:water_bucket', 'create:honey_bucket', 'create:chocolate_bucket',])
   e.add('misctags:botany_pots', colors.map(color => `botanypots:${color}_botany_pot`).concat('botanypots:botany_pot'))
   //#endregion
   //#region removals
@@ -114,7 +114,6 @@ onEvent('item.tags', e => {
   e.remove('appliedenergistics2:metal_ingots', ['#forge:ingots/gold', '#forge:ingots/iron'])
   e.remove('appliedenergistics2:wool', '#minecraft:wool')
   e.remove('appliedenergistics2:workbench', 'minecraft:crafting_table')
-  e.remove('minecraft:beehives', ['resourcefulbees:t1_beehive', 'resourcefulbees:t2_beehive', 'resourcefulbees:t3_beehive', 'resourcefulbees:t4_beehive'])
   e.remove('forge:cheese/silkentofu', 'pamhc2foodextended:silkentofuitem')
   e.remove('forge:chests/personal', 'mekanism:personal_chest')
   e.remove('forge:chests/electric', 'mekanism:personal_chest')
@@ -194,6 +193,6 @@ onEvent('fluid.tags', e => {
     e.add(`forge:molten_${material}`, [`alltheores:molten_${material}`, `#tconstruct:molten_${material}`])
     e.add(`tconstruct:metal_like`, `alltheores:molten_${material}`)
   })
-  e.add('minecraft:water', ['cofh_core:honey', 'resourcefulbees:catnip_honey', 'resourcefulbees:honey', 'resourcefulbees:rainbow_honey_flowing', 'resourcefulbees:rainbow_honey'])
+  e.add('minecraft:water', ['cofh_core:honey',])
 })
 //#endregion

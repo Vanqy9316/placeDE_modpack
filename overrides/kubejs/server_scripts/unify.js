@@ -381,8 +381,8 @@ onEvent('recipes', e => {
   e.remove({ id: 'thermal:storage/coal_coke_block' })
 
   // #region Honey
-  let simpleHoneys = ['cofh_core:honey', 'resourcefulbees:honey', 'create:honey']
-  let customHoneys = ['resourcefulbees:catnip_honey', 'resourcefulbees:rainbow_honey', 'resourcefulbees:starry_honey']
+  let simpleHoneys = ['cofh_core:honey', 'create:honey']
+  let customHoneys = []
 
   function createHoneyMixing(entries) {
     entries.forEach(([output, amount, honey, inputs, id]) => {
@@ -399,12 +399,6 @@ onEvent('recipes', e => {
     })
   }
 
-  e.recipes.create.emptying(['minecraft:glass_bottle', Fluid.of('resourcefulbees:honey', 250)], 'minecraft:honey_bottle').id('kubejs:emptying/honey_bottle')
-
-  e.recipes.thermal.centrifuge(Fluid.of('resourcefulbees:honey', 100), '#forge:simple_honeycombs').id(`kubejs:thermal/centrifuge/centrifuge_honeycomb`)
-  e.recipes.thermal.centrifuge(Fluid.of('resourcefulbees:honey', 900), '#forge:simple_honeycomb_blocks').id(`kubejs:thermal/centrifuge/centrifuge_honeycomb_block`)
-  e.recipes.thermal.crucible(Fluid.of('resourcefulbees:honey', 1000), 'minecraft:honey_block').id('kubejs:thermal/crucible/crucible_honey_block_to_honey')
-
   simpleHoneys.forEach((honey, index) => {
     e.recipes.thermal.chiller('minecraft:honey_block', Fluid.of(honey, 1000)).id(`kubejs:thermal/chiller/honey_block/${index}`)
     e.recipes.thermal.bottler('minecraft:honey_bottle', [Fluid.of(honey, 250), 'minecraft:glass_bottle']).id(`kubejs:thermal/bottler/honey_bottle/${index}`)
@@ -412,19 +406,10 @@ onEvent('recipes', e => {
   customHoneys.forEach(honey => {
     e.recipes.thermal.chiller(`${honey}_block`, Fluid.of(honey, 1000)).id(`kubejs:thermal/chiller/chiller_honey_to_honey_block/${honey.substring(honey.indexOf(':') + 1)}`)
     e.recipes.thermal.bottler(`${honey}_bottle`, [Fluid.of(honey, 250), 'minecraft:glass_bottle']).id(`kubejs:thermal/bottler/bottler_honey_bottle/${honey.substring(honey.indexOf(':') + 1)}`)
-    e.recipes.thermal.centrifuge(Fluid.of(honey, 100), honey.includes('rainbow') ? 'resourcefulbees:rgbee_honeycomb' : `${honey}comb`).id(`kubejs:thermal/centrifuge/centrifuge_honeycomb/${honey.substring(honey.indexOf(':') + 1)}`)
-    e.recipes.thermal.centrifuge(Fluid.of(honey, 900), honey.includes('rainbow') ? 'resourcefulbees:rgbee_honeycomb_block' : `${honey}comb_block`).id(`kubejs:thermal/centrifuge/centrifuge_honeycomb_block/${honey.substring(honey.indexOf(':') + 1)}`)
     e.recipes.thermal.crucible(Fluid.of(honey, 1000), `${honey}_block`).id(`kubejs:thermal/crucible/crucible_honey_block_to_honey/${honey.substring(honey.indexOf(':') + 1)}`)
   })
 
   createHoneyMixing([
-    [
-      'minecraft:bee_nest', 1, 1000, [
-        ['resourcefulbees:resourceful_honeycomb_block', 1],
-        ['resourcefulbees:resourceful_honeycomb', 1],
-        ['resourcefulbees:resourceful_honeycomb_block', 1]
-      ]
-    ],
     [
       'minecraft:cookie', 16, 50, [
         ['minecraft:wheat', 0],
@@ -437,20 +422,6 @@ onEvent('recipes', e => {
         ['minecraft:melon_slice', 0],
         ['forge:nuggets/gold', 1],
         ['minecraft:melon_slice', 0]
-      ]
-    ],
-    [
-      'minecraft:beehive', 3, 100, [
-        ['forge:chests', 1],
-        ['resourcefulbees:resourceful_honeycomb', 1],
-        ['forge:rods/wooden', 1]
-      ]
-    ],
-    [
-      'minecraft:honeycomb_block', 1, 100, [
-        ['resourcefulbees:resourceful_honeycomb', 1],
-        ['resourcefulbees:resourceful_honeycomb', 1],
-        ['resourcefulbees:resourceful_honeycomb', 1]
       ]
     ],
     [
