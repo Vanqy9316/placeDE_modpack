@@ -105,6 +105,7 @@ onEvent('item.tags', e => {
   e.add('forge:simple_honeycomb_blocks', '/^.+:(?!(catnip|rgbee)_).*honeycomb_block$/')
   e.add('misctags:water/items', ['#forge:water', 'minecraft:water_bucket', 'create:honey_bucket', 'create:chocolate_bucket',])
   e.add('misctags:botany_pots', colors.map(color => `botanypots:${color}_botany_pot`).concat('botanypots:botany_pot'))
+  e.add('forge:workbench', 'minecraft:crafting_table')
   //#endregion
   //#region removals
   e.remove(`minecraft:small_flowers`, `#botania:special_flowers`)
@@ -175,6 +176,7 @@ onEvent('block.tags', e => {
   e.add('misctags:concrete', '/minecraft:.+_concrete/')
   e.add('buildinggadgets:blacklist/copy_paste', [/^refinedstorage:.+$/, /^windowlogging:.+$/, /^mekanism:.+$/])
   e.add('buildinggadgets:blacklist/building', [/^refinedstorage:.+$/, /^windowlogging:.+$/, /^mekanism:.+$/])
+  e.add('forge:workbench', 'minecraft:crafting_table')
   //#endregion
   //#region removals
   e.removeAll('minecraft:enderman_holdable')

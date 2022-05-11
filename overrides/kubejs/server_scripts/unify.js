@@ -403,11 +403,11 @@ onEvent('recipes', e => {
     e.recipes.thermal.chiller('minecraft:honey_block', Fluid.of(honey, 1000)).id(`kubejs:thermal/chiller/honey_block/${index}`)
     e.recipes.thermal.bottler('minecraft:honey_bottle', [Fluid.of(honey, 250), 'minecraft:glass_bottle']).id(`kubejs:thermal/bottler/honey_bottle/${index}`)
   })
-  customHoneys.forEach(honey => {
+  /*customHoneys.forEach(honey => {
     e.recipes.thermal.chiller(`${honey}_block`, Fluid.of(honey, 1000)).id(`kubejs:thermal/chiller/chiller_honey_to_honey_block/${honey.substring(honey.indexOf(':') + 1)}`)
     e.recipes.thermal.bottler(`${honey}_bottle`, [Fluid.of(honey, 250), 'minecraft:glass_bottle']).id(`kubejs:thermal/bottler/bottler_honey_bottle/${honey.substring(honey.indexOf(':') + 1)}`)
     e.recipes.thermal.crucible(Fluid.of(honey, 1000), `${honey}_block`).id(`kubejs:thermal/crucible/crucible_honey_block_to_honey/${honey.substring(honey.indexOf(':') + 1)}`)
-  })
+  })*/
 
   createHoneyMixing([
     [
