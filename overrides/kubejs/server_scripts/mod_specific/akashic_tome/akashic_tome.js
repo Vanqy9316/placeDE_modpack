@@ -9,13 +9,6 @@ onEvent('recipes', e => {
               id: 'tconstruct:encyclopedia',
               Count: 1
           },
-          resourcefulbees: {
-              id: 'patchouli:guide_book',
-              Count: 1,
-              tag: {
-                  'patchouli:book': 'resourcefulbees:fifty_shades_of_bees'
-              }
-          },
           astralsorcery: {
               id: 'astralsorcery:tome',
               Count: 1

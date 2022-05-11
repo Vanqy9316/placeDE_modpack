@@ -53,7 +53,7 @@ onEvent('recipes', e => {
     e.shaped(item.of(`minecraft:${color}_stained_glass`, 3), ['GGG', 'G G', 'GGG',], { G: `minecraft:${color}_stained_glass_pane` })
     e.shaped(item.of(`minecraft:${color}_concrete`, 8), ['PPP', 'PWP', 'PPP',], {
       P: `minecraft:${color}_concrete_powder`,
-      W: ['resourcefulbees:water_honeycomb', 'minecraft:water_bucket']
+      W: ['minecraft:water_bucket']
     })
     e.shaped(`2x minecraft:${color}_wool`, ['C', 'C', 'C',], { C: `minecraft:${color}_carpet` })
     e.shaped(item.of(`minecraft:${color}_wool`, 1), ['W', 'W'], { W: `absentbydesign:slab_wool_${color == 'light_gray' ? 'silver' : color}` })
@@ -76,9 +76,5 @@ onEvent('recipes', e => {
     G: '#forge:glass',
     Q: '#forge:gems/quartz',
     S: '#minecraft:wooden_slabs'
-  })
-  modifyShaped(e, 'minecraft:beehive', 1, ['PPP', 'CCC', 'PPP'], {
-    P: '#minecraft:planks',
-    C: '#resourcefulbees:resourceful_honeycomb'
   })
 })
