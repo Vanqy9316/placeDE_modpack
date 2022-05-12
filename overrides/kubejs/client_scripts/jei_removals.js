@@ -69,7 +69,6 @@ onEvent('jei.hide.items', e => {
     /tconstruct:part_builder/,
     /tconstruct:tinkers_anvil/,
     /tconstruct:scorched_anvil/,
-    /resourcefulbees:.*spawn_egg/,
     'create:honey_bucket',
     'twilightforest:uncrafting_table',
     'solarflux:sp_6',
