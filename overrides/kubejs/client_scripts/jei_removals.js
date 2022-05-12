@@ -85,8 +85,15 @@ onEvent('jei.hide.items', e => {
     'projectred-core:copper_ingot',
     'pipez:universal_pipe',
     /chipped:*/,
-    'envirocore:creative_energy_source' //has missing texture and no recipe
-  ])
+    'envirocore:creative_energy_source', //has missing texture and no recipe
+    'ae2wtlib:wireless_universal_terminal',	
+    'ae2wtlib:wireless_fluid_terminal',
+    'bloodmagic:soulsnare',
+    'bloodmagic:firefuse',
+    'bloodmagic:soulfray',
+    'bloodmagic:plantleech',
+    'bloodmagic:sacrificiallamb'
+    ])
 
   enviroStonesMats.forEach(stone => e.hide(`/enviromats:${stone}_.*/`))
   colors.forEach(color => {
