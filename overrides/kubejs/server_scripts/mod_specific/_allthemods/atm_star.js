@@ -31,7 +31,7 @@ onEvent('recipes', e => {
   //#endregion
   //#region Withers Compass
   e.shaped('atmadditions:withers_compass', ['DCD', 'A A', 'DED'], {
-    A: 'minecraft:wither_skeleton_skull',
+    A: 'minecraft:wither_rose',
     C: 'darkutils:rune_wither',
     D: Item.of('apotheosis:potion_charm', { Damage: 0, Potion: "apotheosis:strong_wither" }),
     E: 'naturescompass:naturescompass'
