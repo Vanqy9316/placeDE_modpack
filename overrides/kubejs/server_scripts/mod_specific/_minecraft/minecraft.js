@@ -13,6 +13,7 @@ onEvent('recipes', e => {
   e.shapeless('minecraft:chest', '#forge:chests/wooden').id(`kubejs:minecraft/quartz`)
   e.shapeless('minecraft:crafting_table', /byg:.+_crafting_table/).id(`kubejs:byg_crafter_convert`)
   e.shapeless('9x minecraft:honeycomb', 'minecraft:honeycomb_block').id('kubejs:minecraft/honeycomb')
+  e.shapeless('minecraft:glass', 'tconstruct:clear_glass').id('kubejs:glass/normal_to_clear')
 
   e.shaped('minecraft:totem_of_undying', [' E ', 'GVG', ' G '], {
     E: 'compressium:emerald_3',
