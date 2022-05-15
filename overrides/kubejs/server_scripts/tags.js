@@ -45,7 +45,6 @@ onEvent('item.tags', e => {
   e.add('minecraft:logs_unstripped', '/^.+:(?!stripped_).+_log$/')
   e.add('forge:swords', ['allthemodium:alloy_paxel', 'allthemodium:alloy_sword'])
   e.add('forge:dusts/certus_quartz', ['appliedenergistics2:certus_quartz_dust'])
-  e.add('curios:angelring', 'botania:flight_tiara')
   e.add('forge:ores/dimensionalshard', ['rftoolsbase:dimensionalshard_overworld', 'rftoolsbase:dimensionalshard_nether', 'rftoolsbase:dimensionalshard_end'])
   e.add('forge:ores', ['#forge:ores/certus_quartz', '#forge:ores/oratchalcum', '#forge:ores/rat_gem', '#forge:ores/dimensionalshard', '#forge:ores/arcane_brick'])
   e.add('forge:plastic', ['#pneumaticcraft:plastic_sheets', 'mekanism:hdpe_sheet'])
@@ -110,7 +109,6 @@ onEvent('item.tags', e => {
   //#region removals
   e.remove(`minecraft:small_flowers`, `#botania:special_flowers`)
   e.remove('forge:dyes/yellow', 'mekanism:dust_sulfur')
-  e.remove('curios:head', 'botania:flight_tiara')
   e.remove('appliedenergistics2:glass', ['#forge:glass', 'minecraft:glass'])
   e.remove('appliedenergistics2:metal_ingots', ['#forge:ingots/gold', '#forge:ingots/iron'])
   e.remove('appliedenergistics2:wool', '#minecraft:wool')
