@@ -105,7 +105,7 @@ onEvent('item.tags', e => {
   e.add('misctags:water/items', ['#forge:water', 'minecraft:water_bucket', 'create:honey_bucket', 'create:chocolate_bucket'])
   e.add('misctags:botany_pots', colors.map(color => `botanypots:${color}_botany_pot`).concat('botanypots:botany_pot'))
   e.add('forge:workbench', 'minecraft:crafting_table')
-  e.add('curios:back', 'ironjetpacks:.*_jetpack')
+  e.add('curios:back', '/^ironjetpacks:.+_jetpack$/')
   //#endregion
   //#region removals
   e.remove(`minecraft:small_flowers`, `#botania:special_flowers`)
